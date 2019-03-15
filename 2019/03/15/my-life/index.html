@@ -23,52 +23,10 @@
   <title>新的开始夸耀And麋鹿</title>
   <link rel="shortcut icon" href>
   
-    
-    
-      <link rel="stylesheet" href="/css/bootstrap.min.css">
-    
-      <link rel="stylesheet" href="/css/font-awesome.min.css">
-    
-      <link rel="stylesheet" href="/css/atom-one-dark.css">
-    
-      <link rel="stylesheet" href="/css/jquery.fancybox.css">
-    
-      <link rel="stylesheet" href="/css/nprogress.min.css">
-    
-      <link rel="stylesheet" href="/css/valine.css">
-    
-      <link rel="stylesheet" href="/css/life.css">
-    
-  
 
   
 
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  
-  
-  
-    <script src="/js/jquery-2.2.4.min.js"></script>
-  
-    <script src="https://cdn1.lncld.net/static/js/3.1.0/av-min.js"></script>
-  
-    <script src="/js/jquery.pjax.js"></script>
-  
-    <script src="/js/nprogress.min.js"></script>
-  
-    <script src="/js/tether.min.js"></script>
-  
-    <script src="/js/bootstrap.min.js"></script>
-  
-    <script src="/js/highlight.min.js"></script>
-  
-    <script src="/js/highlightjs-line-numbers.min.js"></script>
-  
-    <script src="/js/jquery.fancybox.js"></script>
-  
-    <script src="/js/jquery.qrcode.min.js"></script>
-  
-    <script src="/js/Valine.min.js"></script>
-  
   
 </head>
 <body>
@@ -85,16 +43,10 @@
         <!--博客主栏开始-->
         <div class="col-xl-9 col-lg-12 blog-main" id="pjax-box">
             <header class="blog-header">
-                <a href="http://www.wapiti.vip" class="blog-header-mobile-title">夸耀And麋鹿</a>
+                <a href="http://yoursite.com" class="blog-header-mobile-title">夸耀And麋鹿</a>
                 <a href="javascript:;" class="blog-header-navbar-btn"><i class="fa fa-bars"></i></a>
                 <nav class="blog-header-navbar blog-header-fixed">
                     <ul class="blog-navbar-links">
-                        
-                          <li class="blog-nav-item"><a href="/" class="transition">首页</a></li>
-                        
-                          <li class="blog-nav-item"><a href="/about/" class="transition">关于</a></li>
-                        
-                          <li class="blog-nav-item"><a href="/links/" class="transition">链接</a></li>
                         
                         <div class="blog-navbar-right">
                             <form action>
@@ -153,10 +105,6 @@
             <div class="row">
             
                 <div class="col-md-4 col-sm-4 post-page-more-btn">
-                    <span class="post-comments-btn btn btn-info btn-block" data-toggle="tooltip" data-placement="top" title="本站采用Disqus评论组件，若您没有科学上网可能会无法查看并评论">加载评论</span>
-                </div>
-            
-                <div class="col-md-4 col-sm-4 post-page-more-btn">
                     <span data-toggle="modal" data-target="#post-donate-content">
                         <span id="post-donate-btn" class="btn btn-danger btn-block" data-toggle="tooltip" data-placement="top" title="如果您觉得本文还不错或者对您有帮助，可以考虑打赏一下作者哦">打赏本文</span>
                     </span>
@@ -182,15 +130,15 @@
                         <div class="row post-donate-content">
                             <div class="col-md-4">
                                 <p>支付宝</p>
-                                <img class="post-donate-content-img no-lightbox" src="http://dl.weic96.cn/logo.png">
+                                <img class="post-donate-content-img no-lightbox" src>
                             </div>
                             <div class="col-md-4">
                                 <p>微信</p>
-                                <img class="post-donate-content-img no-lightbox" src="http://dl.weic96.cn/logo.png">
+                                <img class="post-donate-content-img no-lightbox" src>
                             </div>
                             <div class="col-md-4">
                                 <p>财付通</p>
-                                <img class="post-donate-content-img no-lightbox" src="http://dl.weic96.cn/logo.png">
+                                <img class="post-donate-content-img no-lightbox" src>
                             </div>
                         </div>
                     </div>
@@ -246,7 +194,7 @@
                 return out;
             }
             // 生成
-            var qrcode= $('.post-qrcode-content-canvas').qrcode({width: 150,height: 150,text: toUtf8("http://www.wapiti.vip/2019/03/15/my-life/")}).hide();
+            var qrcode= $('.post-qrcode-content-canvas').qrcode({width: 150,height: 150,text: toUtf8("http://yoursite.com/2019/03/15/my-life/")}).hide();
             var canvas=qrcode.find('canvas').get(0);
             $('.post-qrcode-content-img').attr('src',canvas.toDataURL('image/jpg'));
         </script>
@@ -258,7 +206,7 @@
 
                 
             <footer class="blog-footer">
-                <p class="blog-footer-left">Copyright ©  2019 <a href="http://www.wapiti.vip">夸耀And麋鹿</a></p>
+                <p class="blog-footer-left">Copyright ©  2019 <a href="http://yoursite.com">夸耀And麋鹿</a></p>
                 <p class="blog-footer-right">Powered by <a href="https://hexo.io" target="_blank">Hexo</a>,Theme <a href="https://note.isweic.com/themes-life/" target="_blank">Life</a></p>
             </footer>
         </div><!--博客主栏结束-->
@@ -268,7 +216,7 @@
                 <a href>夸耀And麋鹿</a>
             </div>
             <div class="blog-sidebar-logo">
-                <img src="http://dl.weic96.cn/logo.png">
+                <img src>
             </div>
             <div class="blog-sidebar-count blog-sidebar-padding">
                 <div class="blog-sidebar-count-left">
@@ -323,8 +271,8 @@
         </div><!--博客侧边栏结束-->
     </div>
 </div>
-<script src="/js/LeanStatistics.min.js"></script>
-<script src="/js/Life.js"></script>
+<script src></script>
+<script src></script>
 <script type="text/javascript">
     hljs.initHighlightingOnLoad();
     hljs.initLineNumbersOnLoad();
