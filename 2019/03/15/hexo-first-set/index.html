@@ -20,7 +20,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" , user-scalable="no"">
-  <title>新的开始夸耀And麋鹿</title>
+  <title>博客搭建-hexo的学习夸耀And麋鹿</title>
   <link rel="shortcut icon" href>
   
     
@@ -107,13 +107,13 @@
             </header>
                 
 <header class="blog-post-page-title">
-    <h4>新的开始</h4>
-    <time datetime="2019-03-15T02:02:23.000Z"><i class="fa fa-clock-o"></i>2019-03-15</time>
+    <h4>博客搭建-hexo的学习</h4>
+    <time datetime="2019-03-15T08:14:23.000Z"><i class="fa fa-clock-o"></i>2019-03-15</time>
     
     
     <span>
         <i class="fa fa-eye"></i>
-        <span id="/2019/03/15/my-life/" class="views views-post" title="新的开始"></span>
+        <span id="/2019/03/15/hexo-first-set/" class="views views-post" title="博客搭建-hexo的学习"></span>
     </span>
     
     
@@ -125,15 +125,53 @@
     <article class="blog-post-block blog-post-page-content">
         <section>
             
-                <p>你看这个猪!  hhhhh!</p>
-<p><img src="https://raw.githubusercontent.com/kuayao/kuayao.github.io/master/photo/20190315094351.jpg" alt="Image text"></p>
+                <p>​        以前想着自己写一个博客网站觉得很麻烦,所以就一直没有做,昨天在群里聊天说到搭建博客就又起了兴趣.</p>
+<h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>使用 GitHub pages 服务搭建博客的好处:</p>
+<ol>
+<li><p>全是静态文件，访问速度快；</p>
+</li>
+<li><p>免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；</p>
+</li>
+<li><p>可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；</p>
+</li>
+<li><p>数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；</p>
+</li>
+<li><p>博客内容可以轻松打包、转移、发布到其它平台；</p>
+</li>
+</ol>
+<h3 id="1-1准备工作"><a href="#1-1准备工作" class="headerlink" title="1.1准备工作"></a>1.1准备工作</h3><ul>
+<li>有一个GitHub账号(好久以前就注册了,一直没有用)</li>
+<li>安装有node.js,npm</li>
+<li>安装git客户端</li>
+</ul>
+<p>本文所用环境:</p>
+<ul>
+<li>Win10</li>
+<li><a href="mailto:node.js@v10.15.3" target="_blank" rel="noopener">node.js@v10.15.3</a></li>
+<li><a href="mailto:git@2.19.1" target="_blank" rel="noopener">git@2.19.1</a></li>
+<li><a href="mailto:hexo@1.1.02" target="_blank" rel="noopener">hexo@1.1.02</a>.搭建GitHub博客</li>
+</ul>
+<h2 id="2-搭建GitHub博客"><a href="#2-搭建GitHub博客" class="headerlink" title="2.搭建GitHub博客"></a>2.搭建GitHub博客</h2><h3 id="2-1创建仓库"><a href="#2-1创建仓库" class="headerlink" title="2.1创建仓库"></a>2.1创建仓库</h3><p>​      新建一个名为<code>你的用户名.github.io</code>的仓库  ,就比如说,我的GitHub的用户名是kuayao,那么就新建一个<code>kuayao.github.io</code>的仓库(这里必须是你的用户名,其他的名称无效),将来你的博客访问地址就是<code>http://kuayao.gethub.io</code>了,是不是很方便?</p>
+<p>​    由此可见,每一个GitHub账户最多只能穿件一个可以使用域名访问的仓库.</p>
+<p>​    有几个需要注意的地方</p>
+<ul>
+<li>注册的邮箱一定要验证,否则不会成功;</li>
+<li>仓库名字必须是: <code>username.github.io</code>,其中<code>username</code>就是你的用户名;</li>
+<li><p>仓库创建成功不会立即生效,需要等待一段时间,一般在10-30分钟左右;</p>
+<h3 id="2-2绑定域名"><a href="#2-2绑定域名" class="headerlink" title="2.2绑定域名"></a>2.2绑定域名</h3><p>   当然，你不绑定域名肯定也是可以的，就用默认的 <code>XXX.github.io</code>  来访问，如果你想更个性一点，想拥有一个属于自己的域名，那也是OK的。</p>
+</li>
+</ul>
+<p>​    绑定域名分2种情况：带www和不带www的:</p>
+<p>​    域名配置最常见有2种方式，CNAME和A记录，CNAME填写域名，A记录填写IP，由于不带www方式只能采用A记录，所以必须先ping一下<code>你的用户名.github.io</code>的IP，然后到你的域名DNS设置页，将A记录指向你ping出来的IP，将CNAME指向<code>你的用户名.github.io</code>，这样可以保证无论是否添加www都可以访问，如下：</p>
             
         </section>
         <footer class="blog-post-page-tags">
         
 			
 				
-			<a href="/tags/生活/" rel="tag" data-toggle="tooltip" data-placement="top" title="Linux">生活</a>
+			<a href="/tags/学习/" rel="tag" data-toggle="tooltip" data-placement="top" title="Linux">学习</a>
+				
+			<a href="/tags/hexo/" rel="tag" data-toggle="tooltip" data-placement="top" title="Linux">hexo</a>
 				
 			
 		
@@ -143,10 +181,10 @@
     	
     	
 		
-			<a href="/2019/03/15/wpaiti-study-ps/" class="blog-post-page-readmore-prev" data-toggle="tooltip" data-placement="top" title="在青岛学习的一个月">上一篇</a>
-		
 
 		
+		
+			<a href="/2019/03/15/wpaiti-study-ps/" class="blog-post-page-readmore-next" data-toggle="tooltip" data-placement="top" title="在青岛学习的一个月">下一篇</a>
 		
 
         <div style="clear: both;"></div>
@@ -249,7 +287,7 @@
                 return out;
             }
             // 生成
-            var qrcode= $('.post-qrcode-content-canvas').qrcode({width: 150,height: 150,text: toUtf8("https://wapiti.vip/2019/03/15/my-life/")}).hide();
+            var qrcode= $('.post-qrcode-content-canvas').qrcode({width: 150,height: 150,text: toUtf8("https://wapiti.vip/2019/03/15/hexo-first-set/")}).hide();
             var canvas=qrcode.find('canvas').get(0);
             $('.post-qrcode-content-img').attr('src',canvas.toDataURL('image/jpg'));
         </script>
