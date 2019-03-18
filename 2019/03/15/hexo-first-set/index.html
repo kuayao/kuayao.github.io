@@ -27,7 +27,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/kuayao/kuayao.github.io/master/photo/hexo-first/hexo_new_md.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kuayao/kuayao.github.io/master/photo/hexo-first/hexo_new_page.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kuayao/kuayao.github.io/master/photo/hexo-first/end.png">
-<meta property="og:updated_time" content="2019-03-16T04:03:55.975Z">
+<meta property="og:updated_time" content="2019-03-18T01:31:06.706Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客搭建-hexo的学习">
 <meta name="twitter:description" content="序言​    昨天闲来无事搭建了一个博客,想想也好久没有学习了,就此查阅资料尝试的搭建一个hexo.">
@@ -220,7 +220,7 @@
 <p>​    域名配置最常见有2种方式，CNAME和A记录，CNAME填写域名，A记录填写IP，由于不带www方式只能采用A记录，所以必须先ping一下<code>你的用户名.github.io</code>的IP，然后到你的域名DNS设置页，将A记录指向你ping出来的IP，将CNAME指向<code>你的用户名.github.io</code>，这样可以保证无论是否添加www都可以访问，如下：</p>
 <p><img src="https://raw.githubusercontent.com/kuayao/kuayao.github.io/master/photo/hexo-first/DNS.png" alt="image"></p>
 <p>​    然后在你的GitHub项目的根目录下创建 一个名为CNAME的文件(无后缀),里面填写你的域名信息,如:<code>wapiti.vip</code> .实践证明如果你填写的是<code>www.wapiti.vip</code>的话,那么你以后只能用<code>www.wapiti.vip</code>访问,而如果你填写的是 <code>wapiti.vip</code>,那么用<code>www.wapiti.vip</code>和<code>wapiti</code>访问都是可以的.</p>
-<p>在你绑定了新域名之后，原来的<code>你的用户名.github.io</code>并没有失效，而是会自动跳转到你的新域名。 </p>
+<p>在你绑定了新域名之后，原来的<code>你的用户名.github.io</code>并没    有失效，而是会自动跳转到你的新域名。 </p>
 <h2 id="3-配置SSH-key"><a href="#3-配置SSH-key" class="headerlink" title="3.配置SSH key"></a>3.配置SSH key</h2><p>​    为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。 </p>
 <p><code>$ cd ~/. ssh #检查本机已存在的ssh密钥</code></p>
 <p>​    如果提示：No such file or directory 说明你是第一次使用git。 </p>
@@ -308,7 +308,7 @@
 <p>​    最终部署时生成：<code>hexo\public\my-second-blog\index.html</code>，但是它不会作为文章出现在博文目录。 </p>
 <h4 id="4-12-1-写博客的工具"><a href="#4-12-1-写博客的工具" class="headerlink" title="4.12.1 写博客的工具"></a>4.12.1 写博客的工具</h4><p>​    那么用什么工具写博客呢?我现在一直用着以前下载的Typora.</p>
 <h4 id="4-12-2-如何让博文列表不显示全部内容"><a href="#4-12-2-如何让博文列表不显示全部内容" class="headerlink" title="4.12.2 如何让博文列表不显示全部内容"></a>4.12.2 如何让博文列表不显示全部内容</h4><p>默认情况下，生成的博文目录会显示全部的文章内容，如何设置文章摘要的长度呢？</p>
-<p>答案是在合适的位置加上<code>&lt;!--more--&gt;</code>即可，例如：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 前言</span></span><br><span class="line"></span><br><span class="line">使用github pages服务搭建博客的好处有：</span><br><span class="line"></span><br><span class="line"><span class="bullet">1. </span>全是静态文件，访问速度快；</span><br><span class="line"><span class="bullet">2. </span>免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；</span><br><span class="line"><span class="bullet">3. </span>可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；</span><br><span class="line"></span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line"></span><br><span class="line"><span class="bullet">4. </span>数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；</span><br><span class="line"><span class="bullet">5. </span>博客内容可以轻松打包、转移、发布到其它平台；</span><br><span class="line"><span class="bullet">6. </span>等等；</span><br></pre></td></tr></table></figure></p>
+<p>答案是在合适的位置加上<code>&lt;!--more--&gt;</code>即可，例如：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="section"># 序言</span></span><br><span class="line"></span><br><span class="line"><span class="code">	昨天闲来无事搭建了一个博客,想想也好久没有学习了,就此查阅资料尝试的搭建一个hexo.</span></span><br><span class="line"></span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line"></span><br><span class="line"><span class="code">    	以前想着自己写一个博客网站觉得很麻烦,所以就一直没有做,昨天在群里聊天说到搭建博客就又起了兴趣.</span></span><br></pre></td></tr></table></figure></p>
 <p>​    最终效果:</p>
 <p><img src="https://raw.githubusercontent.com/kuayao/kuayao.github.io/master/photo/hexo-first/end.png" alt="image"></p>
 <h2 id="5-参考"><a href="#5-参考" class="headerlink" title="5.参考"></a>5.参考</h2><p><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">使用hexo+github搭建免费个人博客详细教程 </a></p>
